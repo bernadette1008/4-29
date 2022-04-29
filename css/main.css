@@ -1,0 +1,349 @@
+html, body{
+			height: 900px;
+			/*background-color: aliceblue;*/
+			background-color: #EAEAEA;
+			margin: 0;
+			padding: 0;
+
+		}
+		/*진행도 바*/
+		.prg{
+			position: fixed;
+			bottom: 0px;
+			width: 100%;
+			background-color: white;
+			border-top: 1px solid gray;
+			padding: 3px 0px;
+			display: flex;
+			justify-content: space-between;
+		}
+		
+		.progress {
+			background: #679aff;
+			justify-content: flex-start;
+			border-radius: 100px;
+			align-items: center;
+			position: relative;
+			padding: 0 5px;
+			display: flex;
+			height: 20px;
+			width: 100%;
+			margin: 2px 0px;
+		}
+		
+		#progress-value {
+			animation: load 0.7s normal forwards;
+			box-shadow: 0 10px 40px -10px #fff;
+			border-radius: 100px;
+			background: #fff;
+			height: 10px;
+			width: 70%;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+		
+		@keyframes load {
+			0% { width: 0; }
+			100% { width: 33%; }
+		}
+
+		#next{
+			float: right;
+			padding-right: 10px;
+		}
+		#prg_1{
+			width: 35%;
+			background-color: white;
+			padding-left: 10px;
+		}
+		
+		.button1 > button{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			border-radius: 10px;
+			border: 0 none;
+			width: 50px;
+			height: 24px;
+			cursor: pointer;
+			font-weight: bolder;
+			font-size: 1.5rem;
+			color: #3163C9;
+			margin: 0;
+			padding: 0px 3px 5px 0px;
+			background: rgba(103 ,153, 255, 0.5);
+		}
+
+		.button1 > button:hover{
+			background: rgba(103 ,153, 255, 0.7);
+		}
+
+		.button1 > button:active{
+			background-color: rgba(103 ,153, 255, 1);
+			cursor: pointer;
+		}
+
+		#prg_2{ 
+			width: 30%;
+			background-color: white;
+		}
+		#prg_3{
+			width: 35%;
+			background-color: white;
+			text-align: center;
+		}
+
+		.button2 > button{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			border-radius: 10px;
+			border: 0 none;
+			width: 50px;
+			height: 24px;
+			cursor: pointer;
+			font-weight: bolder;
+			font-size: 1.5rem;
+			color: #3163C9;
+			margin: 0;
+			padding: 0px 0px 5px 3px;
+			background: rgba(103 ,153, 255, 0.5);
+		}
+
+		.button2 > button:hover{
+			background: rgba(103 ,153, 255, 0.7);
+		}
+
+		.button2 > button:active{
+			background-color: rgba(103 ,153, 255, 1);
+			cursor: pointer;
+		}
+
+		.updownbuttons{
+			position: fixed;
+			display: flex;
+			right: 50px;
+			bottom: 50px;
+		}
+
+		.upbutton:hover, .downbutton:hover{
+			background: rgba(103 ,153, 255, 0.7);
+		}
+
+		.upbutton:active, .downbutton:active{
+			background: rgba(103 ,153, 255, 1);
+			cursor: grabbing;
+		}
+
+		.upbutton{
+			background: rgba(103 ,153, 255, 0.5);
+			height: 42px;
+			display: flex;
+			justify-content: center;
+			width: 42px;
+			border-right: 2px dashed #EAEAEA;
+			cursor: grab;
+			font-size: 1.8rem;
+			font-weight: bolder;
+			border-radius: 10px 0px 0px 10px;
+		}
+
+		.downbutton{
+			background-color: rgba(103 ,153, 255, 0.5);
+			height: 42px;
+			width: 42px;
+			display: flex;
+			justify-content: center;
+			cursor: grab;
+			font-size: 1.8rem;
+			font-weight: bolder;
+			border-radius: 0px 10px 10px 0px;
+			
+		}
+		
+		.box{
+			height: 1300px;
+			width: 100%;
+			margin: 0;
+			padding: 0;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+		.left{
+			height: 100%;
+			width: 15%;
+			float: left;
+			background-color: #EAEAEA;
+			margin: 0;
+			padding: 0;
+			border-right: 1px solid gray;
+		}
+
+		.main{
+			height: 100%;
+			width: 1100px;
+			float: left;
+			background-color: white;
+			padding: 0px 24px;
+			border-right: 1px solid gray;
+			border-left: 1px solid gray;
+		}
+
+		.right{
+			float: left;
+			width: 24%;
+			height: 100%;
+			background-color: #EAEAEA;
+			margin: 0;
+			padding: 0;
+			border-left: 1px solid gray;
+		}
+
+
+		/*제목*/
+		.subject{
+			width: 100%;
+			height: 55px;
+			background-color: white;
+		}
+
+		.justify{
+			border: 1px solid gray;
+			border-radius: 5px 5px;
+			margin: 10px;
+			padding: 5px;
+		}
+
+		.upperbox{
+			width: 100%;
+			height: 55px;
+			background-color: #79ABFF;
+			border-bottom: 1px solid gray;
+		}
+
+		.upper{
+			margin:0 auto;
+			max-width: 1392px
+
+		}
+
+		a{
+			text-decoration: none;
+			color: #3163C9;
+		}
+
+		.article > a:hover{
+			text-decoration: underline;
+
+		}
+
+		summary{
+			cursor: pointer;
+		}
+
+		/*정의*/
+		.one_left{float: left;
+			width: 60%;
+			padding: 0px;
+			margin: 0px;
+		}
+		.one_right{
+			float: right; width: 40%;
+		}
+
+		.right_down img{
+			display: block;
+			position: absolute;
+			/* top: 10px; */
+			width: 23%;
+			height: 15%;
+		}
+
+		.img2{
+			animation: img2 30s infinite;
+		}
+
+		@keyframes img2{
+			0%{
+				opacity: 0;
+			}
+
+			25%{
+				opacity: 1;
+			}
+
+			50%{
+				opacity: 1;
+			}
+			
+			75%{
+				opacity: 0;
+			}
+
+			100%{
+				opacity: 0;
+			}
+		}
+
+		.jun_E{
+			font-size: 24px;
+		}
+
+		/*역사*/
+		.two{
+			clear: both;
+		}	
+
+
+		.preview{
+			border: 1px solid gray;
+			padding: 0px 10px 10px 0px;
+			margin-left: 10px;
+			display: inline-block;
+		}
+
+		.testbox{
+			/*display: flex;*/
+			height: 100%;
+		}
+
+		.test{
+			width: 200px;
+			background-color: white;
+			margin-left: 2.5em;
+			border: 1px solid gray;
+			height: 155px;
+			margin-top: 50px;
+			border-radius: 20px;
+		}
+
+		p{
+			margin: 0px;
+		}
+
+		.page0, .page1, .page2{
+			border-bottom: 1px solid gray;
+		}
+
+		.page0{
+			border-top: 1px solid gray;
+		}
+
+		.page3{
+			padding-bottom: 2px;
+			border-radius: 0px 0px 18px 18px;
+		}
+		
+		.page0, .page1, .page2, .page3{
+			text-indent: 10px;
+		}
+
+		#page:hover{
+			background: rgba(103 ,153, 255, 0.5);
+		}
+
+		#page:active{
+			background: rgba(103 ,153, 255, 1);
+		}
